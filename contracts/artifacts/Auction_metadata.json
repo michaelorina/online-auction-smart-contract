@@ -56,6 +56,19 @@
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_endTime",
+						"type": "uint256"
+					}
+				],
+				"name": "putEndTime",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -86,11 +99,11 @@
 	},
 	"sources": {
 		"contracts/4_Auction.sol": {
-			"keccak256": "0x2ebc3dd4a6a49a2085b98de506445b11709b1d1120047406b6a970e1ce03fb77",
+			"keccak256": "0x8f0bf6a9416737b0475bcb2cf326b74d81d06f68d2a0c72cd8a153dd8fb9fcb0",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://0a7abe8fe1209d61af562dbda4df72ba03bdf96673c4674a767033dbc0c5c906",
-				"dweb:/ipfs/QmPPNwmgYZ1uZyFSp9ViccpFMoX3e8ejXRZMH2k7QzgGfJ"
+				"bzz-raw://12569be4fc92fdf8f2a49e79850a0d604373d25e5b32dcb19b04cc057fdd0fc9",
+				"dweb:/ipfs/QmdeYbT967YcMvewUsnd5U7vHjjoWsC7ByxUvGYae1Qet5"
 			]
 		}
 	},

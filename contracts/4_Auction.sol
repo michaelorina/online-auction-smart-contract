@@ -7,6 +7,8 @@ contract Auction{
     mapping(address => uint) biddersData;
     uint highestBidAmount;
     address highestBidder;
+    uint startTime;
+    uint endTime;
 
     // put new bid
 
@@ -17,6 +19,10 @@ contract Auction{
         //verify value is not zero
 
         require(msg.value > 0, "Bid Cannot Be Zero!");
+
+        //check session is not ended
+
+        require(block.timestamp <= endTime, "Auction is Ended");
 
         //check highest bid
 
@@ -50,5 +56,10 @@ contract Auction{
 
     function HighestBidder() public view returns(address){
         return highestBidder;
+    }
+
+    //put endTime
+    function putEndTime(uint _endTime) public {
+        endTime = _endTime;
     }
 }
