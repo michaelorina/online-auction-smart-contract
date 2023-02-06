@@ -7,8 +7,14 @@ contract Auction{
     mapping(address => uint) biddersData;
     uint highestBidAmount;
     address highestBidder;
-    uint startTime;
+    uint startTime = block.timestamp;
     uint endTime;
+    address owner;
+
+    // bool actionEnded = false;
+    //     constructor(){
+    //         owner.msg.sender;
+    //     }
 
     // put new bid
 
@@ -61,5 +67,12 @@ contract Auction{
     //put endTime
     function putEndTime(uint _endTime) public {
         endTime = _endTime;
+    }
+
+    //withdraw bid 
+    function withdrawBid(address payable _address) public {
+        if (biddersData[_address] > 0){
+            _address.transfer(biddersData[_address]);
+        }
     }
 }

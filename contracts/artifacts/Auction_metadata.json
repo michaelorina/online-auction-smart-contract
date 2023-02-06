@@ -69,6 +69,19 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "withdrawBid",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -99,11 +112,11 @@
 	},
 	"sources": {
 		"contracts/4_Auction.sol": {
-			"keccak256": "0x8f0bf6a9416737b0475bcb2cf326b74d81d06f68d2a0c72cd8a153dd8fb9fcb0",
+			"keccak256": "0x8f1f852776549230064a5efe3505b311c44b383f48e154fb4fc99d1c2f65cc93",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://12569be4fc92fdf8f2a49e79850a0d604373d25e5b32dcb19b04cc057fdd0fc9",
-				"dweb:/ipfs/QmdeYbT967YcMvewUsnd5U7vHjjoWsC7ByxUvGYae1Qet5"
+				"bzz-raw://ee32edda654caf03b646eb416074af59eee55329cc0ae545de4a3a04efaa38e2",
+				"dweb:/ipfs/QmQ46B2HEQLA9NqpZ6KymQxJCMHLQV3P7eaKrMtzEgYuCE"
 			]
 		}
 	},
